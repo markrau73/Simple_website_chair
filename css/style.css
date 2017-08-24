@@ -1,0 +1,696 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+    font-family: "Raleway", Playfair Display, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+header .container {
+  position: relative;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.topSpan {
+  color: #14aa9e;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.menuText {
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.hidden {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  opacity: .0;
+  position: absolute;
+  transform: translateY(10%);
+  transform: translateX(30%);
+
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 15px;
+    background-color: black;
+    width: 120px;
+    height: 120px;
+    padding-left: 16px;
+    padding-top: 5px;
+    margin-top: 55px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.arrowUp {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid black;
+    margin-top: -20px;
+    position: absolute;
+    left: 45px;
+}
+
+.dropText {
+  padding-top: 15px;
+}
+
+ .topPicture {
+   background: rgba(255,255,255,1);
+   background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+   background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+   background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+   background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+   height: 600px;
+}
+
+.topPicture .container {
+  position: relative;
+}
+
+.leftArrow {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #14aa9e;
+}
+
+.rightArrow {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #14aa9e;
+}
+.chair, .topPicture_text {
+  display: inline-block;
+}
+
+.chair {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.topPicture_text {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+}
+
+.text {
+  width: 600px;
+  marigin: 5px auto;
+  text-align: center;
+  line-height: 30px;
+}
+
+.firstText {
+  font-size: 40px;
+  margin-bottom: 30px;
+  clear;
+}
+
+.button {
+  width: 280px;
+  height: 40px;
+  background-color: #14aa9e;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 40px;
+  margin-left: 150px;
+  font-size: 30px;
+  color: white;
+}
+
+#gallery {
+  width: 100%;
+  height: 470px;
+}
+
+.picture1, .picture2, .boxText {
+  display: inline-block;
+  width: 31%;
+  margin-top: 50px;
+}
+
+.picture1 {
+  background-image: url(../images/box1_img.jpg);
+  background-size: cover;
+  height: 300px;
+  margin-right: 47px;
+  float: left;
+}
+
+.chairText1 {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, .4);
+  margin-top: 200px;
+  position: relative;
+}
+
+.clairAndUnderline {
+  vertical-align: middle;
+  position: relative;
+  top: 30%;
+  left: 5%;
+}
+
+.clair {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.chairText2 {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, .4);
+  margin-top: 200px;
+  position: relative;
+}
+
+.margaritaAndUnderline {
+  vertical-align: middle;
+  position: relative;
+  top: 30%;
+  left: 5%;
+}
+
+.underline {
+  width: 137px;
+  height: 10px;
+  background-color: #14aa9e;
+}
+
+.picture2 {
+  background-image: url(../images/box2_img.jpg);
+  background-size: cover;
+  height: 300px;
+}
+
+.boxText {
+  height: 350px;
+  border: 1px solid #cccccc;
+  float: right;
+  position: relative;
+}
+
+.textFind {
+  position: absolute;
+  margin: 10%;
+}
+
+.doubleLorem {
+  color: #808080;
+}
+
+#plans {
+  width: 100%;
+  height: 1200px;
+  background-color: #f2f2f2;
+}
+
+#plans .container {
+  position: relative;
+}
+
+.priceList {
+  position: absolute;
+  top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color:#595959;
+}
+
+.underlineLong {
+  width: 400px;
+  height: 10px;
+  background-color: #14aa9e;
+}
+
+.inner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #bfbfbf;
+  margin: 15px;
+}
+
+.other {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #bfbfbf;
+  position: absolute;
+  top: -55px;
+  left: 162px;
+}
+
+.main, .main2, .main3 {
+  display: inline-block;
+  width: 30%;
+
+}
+
+.main {
+  height: 750px;
+  position: relative;
+  top: 180px;
+  margin-right: 54px;
+  border: 2px solid #bfbfbf;
+}
+
+
+.firstHeader {
+  margin: 50px auto;
+  text-align: center;
+  color: #14aa9e;
+  font-weight: bold;
+}
+
+
+.boxFirstCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #bfbfbf;
+  margin: 50px auto;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.boxFirstCircleText1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #bfbfbf;
+}
+
+.boxFirstCircleText2 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #bfbfbf;
+}
+
+.boxFirstText1 {
+  width: 100%;
+  height: 60px;
+  background-color: #d9d9d9;
+}
+
+.boxFirstText2 {
+  width: 100%;
+  height: 60px;
+  background-color: #e6e6e6;
+}
+
+.saleSerwis {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 400;
+  color: #999999;
+  padding-top: 13px;
+}
+
+
+.priceButton {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  background: #14aa9e;
+  margin: 180px auto;
+  text-align: center;
+  color: white;
+}
+
+.priceButtonText {
+  font-size: 22px;
+  padding-top: 7px;
+}
+
+.inner2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  margin: 15px;
+}
+
+.other2 {
+  width: 70px;
+  height: 70px;
+  background: #14aa9e;
+  border-radius: 50%;
+  position: absolute;
+  top: -55px;
+  left: 162px;
+}
+
+.main2 {
+  height: 750px;
+  position: relative;
+  top: 186px;
+  margin-right: 54px;
+  border: 2px solid #14aa9e;
+  background-color: #14aa9e;
+}
+
+.secondHeader {
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.boxSecondCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 50px auto;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.boxSecondCircleText1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #14aa9e;
+}
+
+.boxSecondCircleText2 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #14aa9e;
+}
+
+.boxSecondText1 {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+.boxSecondText2 {
+  width: 100%;
+  height: 60px;
+  background-color: #e6e6e6;
+}
+
+.boxSecondText3 {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+.priceButton2 {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  background: white;
+  margin: 130px auto;
+  text-align: center;
+  color: #14aa9e;
+}
+
+.priceButtonText2 {
+  font-size: 22px;
+  padding-top: 7px;
+}
+
+.main3 {
+  height: 750px;
+  position: relative;
+  top: 195px;
+  border: 2px solid #bfbfbf;
+}
+
+.inner3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #bfbfbf;
+  margin: 15px;
+}
+
+.other3 {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #bfbfbf;
+  position: absolute;
+  top: -55px;
+  left: 162px;
+}
+
+.priceButton3 {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  background: #14aa9e;
+  margin: 75px auto;
+  text-align: center;
+  color: white;
+}
+
+
+#contactArea .container {
+  position: relative;
+}
+
+
+.contact {
+    position: absolute;
+    top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color:#595959;
+}
+
+.contact .container {
+  position: relative;
+}
+
+.bottomForm {
+  position: absolute;
+  top: 150px;
+  bottom: 100px;
+}
+
+#name, #email, textarea {
+  display: block;
+  width: 750px;
+  height: 100px;
+  margin-bottom: 50px;
+  border: 1px solid #14aa9e;
+}
+
+textarea {
+  height: 300px;
+  resize: none;
+  font-family: "Raleway", Playfair Display, sans-serif;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+input {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+
+#name {
+  font-family: "Raleway", Playfair Display, sans-serif;
+}
+
+#name:placeholder {
+  margin-left: 30px;
+}
+
+#email {
+  font-family: "Raleway", Playfair Display, sans-serif;
+}
+
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+  font-size: 44px;
+  font-weight: 100;
+}
+
+::-moz-input-placeholder {
+  color: #bfbfbf;
+  font-size: 44px;
+  font-weight: 100;
+}
+
+.sendInputs, .firstThreeInputs {
+  display: inline-block;
+}
+
+input {
+  border: 1px solid #14aa9e;
+}
+
+.sendInputs {
+  width: 450px;
+  float: right;
+  margin-left: 50px;
+}
+
+.pictureRed {
+  width: 100%;
+  margin-left: 40px;
+  margin-bottom: 80px;
+  margin-top: -40px;
+}
+
+.checkBox, .agrText {
+  display: inline-block;
+}
+
+#agree {
+  width: 52px;
+  height: 52px;
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid #14aa9e;
+  border-radius: 3px;
+}
+
+#agree:checked {
+  border: 1px solid #14aa9e;
+  background-image: url("../images/form_ok.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input:placeholder {
+  font-weight: 100;
+}
+
+.agrText {
+  font-size: 27px;
+  color: #bfbfbf;
+  padding-left: 20px;
+  margin-top: 35px;
+}
+
+#send {
+  width: 450px;
+  height: 100px;
+  margin-top: 10px;
+  background-color: #14aa9e;
+  color: white;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor
+}
+
+.container .copyRight {
+  position: relative;
+}
+
+.copyRight {
+  position: absolute;
+  transform: translateY(860%);
+  padding-bottom: 80px;
+}
+
+.icons {
+  position: absolute;
+  transform: translateY(690%);
+  padding-bottom: 80px;
+  left: 1100px;
+}
+
+.Coders .icons .bottomLogo {
+  display: inline-block;
+
+}
+
+.bottomLogo {
+  position: absolute;
+  transform: translateY(680%);
+  padding-bottom: 80px;
+  left: 1380px;
+  color:#808080;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.Coders {
+  color: #808080;
+  font-size: 24px;
+}
+
+.bottomSpan {
+  font-weight: bold;
+}
